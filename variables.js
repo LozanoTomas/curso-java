@@ -33,3 +33,4 @@ console.log(total)
 // boolean 0 / 1 booleanos true o false
 
 console.log(n1 > n2)
+//log
