@@ -14,16 +14,16 @@ nombre = "yoyito"
 
 console.log(nombre)
 
-let EdadDeLaPersona = 31
-console.log (EdadDeLaPersona)
+let edadDeLaPersona = 31
+console.log (edadDeLaPersona)
 
 //let numero = prompt("porfavor ingresa un numero")
 
 //console.log (numero)
 
-//let NombreDeUsuario = prompt("porfavor inicia sesion con tu nombre")
+//let nombreDeUsuario = prompt("porfavor inicia sesion con tu nombre")
 
-//alert("hola " + NombreDeUsuario + " como estas?")
+//alert("hola " + nombreDeUsuario + " como estas?")
 
 let n1 = Number(prompt("ingresa el primer numero"))
 let n2 = Number(prompt("ingresa el segundo numero"))

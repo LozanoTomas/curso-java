@@ -4,5 +4,30 @@
     box-sizing: border-box;
 }
 .title {
-    color: rebeccapurple;
+    color: green;
+    font-size: 50px;
+    text-align: center;
+}
+
+.produDispo {
+    color: orangered;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.todo {
+    display: inline-block;
+    margin-left: 6rem;
+    margin-top: 2rem;
+}
+
+.tipos {
+    color: blue;
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.pepe {
+    text-align: center;
 }
