@@ -82,8 +82,12 @@ while (continuar) {
     }
 
     continuar = confirm("¿Desea agregar otro producto?")
+    
+}
 
-    // si tiene cupon se restan 50 pesos
+console.log(`El total a pagar es de ${total} pesos.`)
+
+// si tiene cupon se restan 100 pesos
     // si no tiene se queda como esta
     let preg = prompt("tiene un cupon de descuento?")
    
@@ -92,17 +96,13 @@ while (continuar) {
     } else {
         alert("cupon no valido")
     }
-    
-}
-
-console.log(`El total a pagar es de ${total} pesos.`)
 
 // si el total de la compra no pasa de los 200 pesos se cobraran 40 pesos de mas por impuesto pais.
 
 if(total <= 200){
     alert("el precio es muy bajo, se le cobraran impuestos pais")
 }else {
-
+    console.log(`El total a pagar es de ${total} pesos.`)
 }
 
 for(let pago = total; pago <= 200; pago++){
