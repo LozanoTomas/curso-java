@@ -56,7 +56,7 @@ let productos = agregarAlCarrito => {
         case "mostaza":
             return impuestoDelSupermercado + 60
         default:
-            return "producto no disponible"
+            return alert("producto no disponible")
     }
 }
 

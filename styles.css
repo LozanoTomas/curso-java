@@ -20,6 +20,7 @@
     display: inline-block;
     margin-left: 6rem;
     margin-top: 2rem;
+    background-color: salmon;
 }
 
 .tipos {
@@ -30,4 +31,21 @@
 
 .pepe {
     text-align: center;
+}
+
+.card {
+    border: 2px, solid, red;
+    width: 200px;
+}
+
+.card h2{
+    color: blue;
+}
+
+.container-productos {
+    border: 2px, solid, blue;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
 }
