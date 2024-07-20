@@ -53,16 +53,16 @@ const encontrar = (identificador)=>{
     return false
 }
 
-let productoEncontrado = encontrar(2)
+let productoEncontrado = encontrar(Number(prompt("escribi")))
 console.log(productoEncontrado);
 
 // encontrar un elemento por id y sumarle 10 unidades 
 
-const encontarYsumar = (iden)=>{
-    let x = encontrar(iden)
-    miProducto.stock += 10
-}
+//const encontarYsumar = (iden)=>{
+    //let x = encontrar(iden)
+    //miProducto.stock += 10
+//}
 
-encontarYsumar(4)
+//encontarYsumar(4)
 
-console.log(productos);
+//console.log(productos);

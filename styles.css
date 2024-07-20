@@ -18,9 +18,11 @@
 
 .todo {
     display: inline-block;
-    margin-left: 6rem;
+    margin-left: 2rem;
     margin-top: 2rem;
     background-color: salmon;
+    width: 300px;
+    height: 150px;
 }
 
 .tipos {
@@ -48,4 +50,8 @@
     min-height: 700px;
     display: flex;
     align-items: center;
+}
+
+ul{
+    list-style: none;
 }
