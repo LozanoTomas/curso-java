@@ -8,4 +8,9 @@
 
 // quiero saber si el numero es menor a 10
 
-   
+for(let i = 0; i < productos.length; i++){
+    if(productos[i].id === identificador){
+        return productos[i]
+    }
+}
+return false

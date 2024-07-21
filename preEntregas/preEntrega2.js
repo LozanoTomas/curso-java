@@ -81,7 +81,6 @@ const productos = [
 //console.log(resultadoCuenta);
 
 
-
 //let preguntaAutomatica = prompt("Desea agregar más productos al carrito?")
 
 let total = 0
@@ -89,16 +88,11 @@ let continuar = true
 
 while (continuar) {
 
-    const encontrar = (identificador)=>{
-        for(let i = 0; i < productos.length; i++){
-            if(productos[i].id === identificador){
-                return productos[i]
-            }
-        }
-        return false
+    const buscar = (identificador)=>{
+        return productos.find(producto => producto.id === identificador) || false;
     }
     
-    let productoEncontrado = encontrar(Number(prompt("ingrese el id del producto que desea")))
+    let productoEncontrado = buscar(Number(prompt("Ingrese el id del producto que desea")))
     
     
     let resultado = productoEncontrado
@@ -116,7 +110,7 @@ while (continuar) {
         alert("Producto no encontrado. Por favor, ingrese un ID válido.")
     }
 
-    continuar = confirm("¿Desea agregar otro producto?")
+    continuar = confirm("¿Desea agregar otro producto? Ingrese el id correspondiente.")
     
 }
 
@@ -124,7 +118,7 @@ console.log(`El total a pagar es de ${total} pesos.`)
 
 // si tiene cupon se restan 100 pesos
     // si no tiene se queda como esta
-    let preg = prompt("tiene un cupon de descuento?")
+    let preg = prompt("tiene un cupon de descuento? (si/no)")
    
     if(preg === "si" || preg  === "no"){
         preg === "si" ? total -= 100 : total === total
