@@ -1,6 +1,7 @@
 let numero = 0
 
 let botonSumar = document.getElementById("btn-sumar")
+let botonRestar = document.getElementById("btn-restar")
 let contador = document.getElementById("contador")
 contador.innerText = numero
 
@@ -10,6 +11,11 @@ contador.innerText = numero
 
 botonSumar.addEventListener("click", ()=>{
     numero ++
+    contador.innerText = numero
+})
+
+botonRestar.addEventListener("click", ()=>{
+    numero --
     contador.innerText = numero
 })
 

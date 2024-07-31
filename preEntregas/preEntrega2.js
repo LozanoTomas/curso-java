@@ -23,10 +23,10 @@
 
 // impuestos del supermercado = 130 pesos
 
-let saludo = nombreYApellido => "Hola! " + nombreYApellido + ", bienvenido a Virtual Supermarket"
+//let saludo = nombreYApellido => "Hola! " + nombreYApellido + ", bienvenido a Virtual Supermarket"
 
-let bienvenida = saludo(prompt("Porfavor ingrese su Nombre y Apellido"))
-console.log(bienvenida);
+//let bienvenida = saludo(prompt("Porfavor ingrese su Nombre y Apellido"))
+//alert(bienvenida);
 
 let impuestoDelSupermercado = 100
 
@@ -140,3 +140,22 @@ for(let pago = total; pago <= 200; pago++){
 }
 
 alert("los productos han sido comprados correctamente")
+
+const variados = document.querySelectorAll(".producto")
+
+variados.forEach(producto =>{
+    let numero = 0
+    const contador = producto.querySelector(".conta")
+    const btnSumar = producto.querySelector(".btn-sumar")
+    const btnRestar = producto.querySelector(".btn-restar")
+
+    btnSumar.addEventListener("click", ()=>{
+        numero ++
+        contador.innerText = numero
+    })
+
+    btnRestar.addEventListener("click", ()=>{
+        numero --
+        contador.innerText = numero
+    })
+})

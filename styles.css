@@ -3,10 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .title {
     color: green;
     font-size: 50px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .produDispo {
@@ -14,44 +17,62 @@
     font-size: 35px;
     text-align: center;
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
+
+.imagen {
+    width: 200px;
+    height: 200px;
+}
+
+.producto {
+    display: inline-block;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.carro {
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+
+.yoyo {
+    margin-left: 90rem;
+    list-style: none;
+}
+
+.container-input {
+    display: flex;
+    justify-content: center;
+    margin-left: 14rem;
+}
+
+.volver {
+    width: 40px;
+    height: 40px;
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+
+.navv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo {
+    font-size: 2rem;
+}
+
+/* tarjetas */
 
 .todo {
-    display: inline-block;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    background-color: salmon;
-    width: 300px;
-    height: 150px;
-}
-
-.tipos {
-    color: blue;
-    font-size: 30px;
-    margin-bottom: 1rem;
-}
-
-.pepe {
-    text-align: center;
-}
-
-.card {
-    border: 2px, solid, red;
-    width: 200px;
-}
-
-.card h2{
-    color: blue;
-}
-
-.container-productos {
-    border: 2px, solid, blue;
-    width: 100%;
-    min-height: 700px;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
-ul{
-    list-style: none;
+.eliminar {
+    display: flex;
+    margin-left: 4.5rem;
 }

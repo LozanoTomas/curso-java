@@ -7,9 +7,22 @@
     <title>Virtual SuperMarket</title>
 </head>
 <body>
-    <h1 class="title">Virtual SuperMarket</h1>
-    <h2 class="produDispo">Productos disponibles:</h2>
-    <section class="pepe">
+    <header>
+        <h1 class="title">Virtual SuperMarket</h1>
+        <h2 class="produDispo">Productos disponibles:</h2>
+        <ul class="yoyo">
+            <li>
+                <a href="./carrito.html"><img class="carro" src="./imagenes/carrito-de-compras.png" alt="Carrito"></a>
+            </li>
+        </ul>
+        <div class="container-input">
+            <input type="text" placeholder="Buscar producto..." id="search" />
+            <p>(comidas, bebidas, lacteos, aderezos)</p>
+        </div>
+    </header>
+    <div id="products-container"></div>
+    
+    <!--<section class="pepe">
         <div class="todo">
             <h3 class="tipos">Comidas:</h3>
             <ul class="lista">
@@ -42,9 +55,19 @@
                 <li>Mostaza | id = 12</li>
             </ul>
         </div>
-    </section>
+    </section>-->
     <!--<section>
-        <button id="btn-sumar">sumar</button>
+        <button id="local-Btn">Guardar en localStorage</button>
+        <button id="local-Btn-Get">Obtener de local storage</button>
+        <button id="local-Btn-Remove">Eliminar un item</button>
+        <button id="local-Btn-Clear">Limpiar</button>
+    </section>-->
+    <!--<section>
+        <img class="pepep" src="https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/2540661_f.jpg" alt="">
+        <div class="butons">
+            <button id="btn-sumar">sumar</button>
+            <button id="btn-restar">restar</button>
+        </div>
         <h2 id="contador">contador</h2>
         <h3 id="eventos">probando eventos</h3>
         <form>
@@ -58,6 +81,6 @@
         </form>
         <div class="container-productos"></div>
     </section>-->
-    <script src="./preEntregas/preEntrega2.js"></script>
+    <script src="./preEntregas/preEntrega3.js"></script>
 </body>
 </html>
