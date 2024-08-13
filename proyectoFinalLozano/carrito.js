@@ -29,7 +29,33 @@ const eliminarDelCarrito = (id) => {
     carrito.splice(productoIndex, 1);
     localStorage.setItem("carrito", JSON.stringify(carrito));
     renderProducts(carrito);
+    Swal.fire({
+      icon: "error",
+      title: "Producto eliminado",
+      text: "El producto ha sido eliminado del carrito.",
+    });
   }
 };
 
 renderProducts(carrito);
+
+const finalizarCompra = () => {
+  carrito = [];
+
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+
+  renderProducts(carrito);
+
+  Swal.fire({
+    position: "middle",
+    icon: "success",
+    title: "La compra se realizó con éxito",
+    showConfirmButton: true,
+    timer: 1500
+  });
+};
+
+const botonFinalizarCompra = document.getElementById("finalizar-compra");
+if (botonFinalizarCompra) {
+  botonFinalizarCompra.addEventListener("click", finalizarCompra);
+}

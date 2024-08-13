@@ -1,0 +1,16 @@
+{
+    "productos":[
+        {"nombre": "fideos", "precio": 120, "id": 1, "stock": 5, "category": "comidas", "cantidad": 0, "image": "https://ardiaprod.vtexassets.com/arquivos/ids/285764/Fideos-Tirabuzon-N28-Matarazzo-500-Gr-_1.jpg?v=638357496167670000"},
+        {"nombre": "arroz", "precio": 100, "id": 2, "stock": 10, "category": "comidas", "cantidad": 0, "image": "https://http2.mlstatic.com/D_751946-MLA71242422338_082023-C.jpg}"},
+        {"nombre": "carne", "precio": 200, "id": 3, "stock": 2, "category": "comidas", "cantidad": 0, "image": "https://st2.depositphotos.com/2515395/47306/i/450/depositphotos_473062154-stock-photo-pork-bone-steak-vacuum-commercial.jpg"},
+        {"nombre": "agua", "precio": 50, "id": 4, "stock": 4, "category": "bebidas", "cantidad": 0, "image": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3040004_f.jpg"},
+        {"nombre": "cocaCola", "precio": 80, "id": 5, "stock": 6, "category": "bebidas", "cantidad": 0, "image": "https://ardiaprod.vtexassets.com/arquivos/ids/298976/Gaseosa-CocaCola-Sabor-Original-2-25-Lt-_2.jpg?v=638503264498200000"},
+        {"nombre": "sprite", "precio": 75, "id": 6, "stock": 1, "category": "bebidas", "cantidad": 0, "image": "https://acdn.mitiendanube.com/stores/001/144/141/products/whatsapp-image-2021-08-25-at-11-08-571-f2321c146eb51f1dac16299005725116-640-0.jpeg"},
+        {"nombre": "leche", "precio": 90, "id": 7, "stock": 2, "category": "lacteos", "cantidad": 0,  "image": "https://www.casa-segal.com/wp-content/uploads/2019/07/leche-entera-ilolay-1-litro-almacen-casa-segal-mendoza-600x600.jpg"},
+        {"nombre": "yogurt", "precio": 30, "id": 8, "stock": 7, "category": "lacteos", "cantidad": 0, "image": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3261690_f.jpg"},
+        {"nombre": "helado", "precio": 130, "id": 9, "stock": 10, "category": "lacteos", "cantidad": 0, "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjfR4y2QDHZ_CZCi6jLUnzF5YW_U0ykoKI2Q&s"},
+        {"nombre": "mayonesa", "precio": 80, "id": 10, "stock": 5, "category": "aderezos", "cantidad": 0, "image": "https://carrefourar.vtexassets.com/arquivos/ids/359572/7791866001203_E02.jpg?v=638258195033770000"},
+        {"nombre": "ketchup", "precio": 85, "id": 11, "stock": 3, "category": "aderezos", "cantidad": 0, "image": "https://ardiaprod.vtexassets.com/arquivos/ids/267177/Ketchup-Natura-250-Gr-_1.jpg?v=638322461219630000"},
+        {"nombre": "mostaza", "precio": 60, "id": 12, "stock": 1, "category": "aderezos", "cantidad": 0, "image": "https://carrefourar.vtexassets.com/arquivos/ids/359577/7791866004211_E02.jpg?v=638258197250870000"}
+    ]
+}
