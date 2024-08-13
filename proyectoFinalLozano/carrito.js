@@ -40,18 +40,35 @@ const eliminarDelCarrito = (id) => {
 renderProducts(carrito);
 
 const finalizarCompra = () => {
-  carrito = [];
-
-  localStorage.setItem("carrito", JSON.stringify(carrito));
-
-  renderProducts(carrito);
-
   Swal.fire({
-    position: "middle",
-    icon: "success",
-    title: "La compra se realizó con éxito",
-    showConfirmButton: true,
-    timer: 1500
+    title: "¿Confirmar compra?",
+    text: "¿Estás seguro de que deseas finalizar la compra?",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonText: "Sí, confirmar",
+    cancelButtonText: "No, cancelar"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      carrito = [];
+      localStorage.setItem("carrito", JSON.stringify(carrito));
+      renderProducts(carrito);
+
+      Swal.fire({
+        position: "middle",
+        icon: "success",
+        title: "La compra se realizó con éxito",
+        showConfirmButton: true,
+        timer: 1500
+      });
+    } else {
+      Swal.fire({
+        position: "middle",
+        icon: "info",
+        title: "La compra fue cancelada",
+        showConfirmButton: true,
+        timer: 1500
+      });
+    }
   });
 };
 

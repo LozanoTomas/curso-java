@@ -32,6 +32,12 @@ const sumar = (id) => {
         if (producto && producto.cantidad < producto.stock) {
             producto.cantidad++;
             actualizarCantidad(id);
+        }else {Swal.fire({
+            title: "Sin stock",
+            text: `No hay más stock de ${producto.nombre}.`,
+            icon: "warning",
+            confirmButtonText: "OK"
+            });
         }
     };
       
